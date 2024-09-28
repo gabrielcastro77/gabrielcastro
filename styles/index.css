@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: auto;
+}
+
+.box {
+    width: 190px;
+    height: 190px;
+    margin: 190px auto 0;
+    overflow: hidden;
+    transform: rotate(45deg);
+    transition: width 1s, height 1s, transform 1s;
+    background-image: url(../assets/self.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ .animation {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    transition: width 1s;
+    background-color: #CCCCCC;
+}
+
+.title {
+    width: 250px;
+    margin: 116px auto 50px;
+    font: 400 18px "Hind", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    line-height: 2.6;
+    color: #CCCCCC;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.links {
+    padding: 22px 48px;
+    text-decoration: none;
+    font: italic bolder 22px "Open Sans", sans-serif;
+    color: #999999;
+    cursor: pointer;
+}
+
+.links:hover {
+    color: #B7A389;
+}
+
+.name {
+    padding: 100px 0 100px;
+    font: italic 200 50px "Playfair Display", serif;
+    color: #999999;
+    text-align: center;
+    letter-spacing: 6px;
+    line-height: 1.0;
+    color: #999999;
+}
+
+@media screen and (min-width: 375px)  and (max-width: 767px) {
+    .box {
+        width: 230px;
+        height: 230px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .box {
+        width: 470px;
+        height: 470px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .box {
+        width: 500px;
+        height: 500px;
+        margin: 260px auto 0;
+    }
+
+    .title {
+        margin: 0;
+        font-size: 24px;
+        text-transform: lowercase;
+        letter-spacing: 18px;
+    }
+
+    .disc1 {
+        position: absolute;
+        top: 54%;
+        left: 4%;
+        transform: rotate(-135deg);
+    }
+
+    .disc2 {
+        position: absolute;
+        top: 24%;
+        left: 7%;
+        transform: rotate(-45deg);
+    }
+
+    .disc3 {
+        position: absolute;
+        top: 25%;
+        right: 10%;
+        transform: rotate(45deg);
+    }
+
+    .menu {
+        position: absolute;
+        top: 48%;
+        right: 6%;
+        width: 200px;
+        margin: 0;
+        transform: rotate(45deg);
+        text-transform: uppercase;
+    }
+
+    .links {
+        width: 94px;
+        padding: 26px 0;
+        font-size: 14px;
+        text-align: left;
+        letter-spacing: 2px;
+    }
+
+    .name {
+        padding: 0;
+        margin: 220px auto 200px;
+        font-size: 55px;
+    }
+}

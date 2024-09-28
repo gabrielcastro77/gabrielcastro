@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/contacts.css">
+</head>
+<body>
+    <section class="my-contacts">
+        <div class="box-x">
+            <div class="box-animation">
+                <div class="line1"></div>
+                <div class="line2"></div>
+            </div>
+        </div>
+        <div class="first-box">
+            <h1 class="title">
+                Entre em contato comigo
+            </h1>
+            <img style="width: 50px; height: 30px;" src="../assets/rows.png" alt="Rows">
+            <p class="text">
+                <span class="marking">Disponível para contato!</span> Sinta-se à vontade para me enviar uma mensagem.
+            </p>
+        </div>
+        <form class="form" action="https://api.staticforms.xyz/submit" method="post" autocomplete="off">
+            <input type="hidden" name="accessKey" value="5ae5885a-6d3c-4860-8cc5-11b963c48d24">
+            <input type="hidden" name="redirectTo" value="https://gabrielcastro-vercel-com.vercel.app/pages/success.html">
+            <div class="mensagem">
+
+            </div>
+            <div class="go">
+                <div class="go1">
+                    <div class="box">
+                        <input class="i1" type="text" name="name" placeholder="Nome" minlength="2" required>
+                        <p class="p1"></p>
+                    </div>
+                    <div class="box">
+                        <input class="i2" type="email" name="email" placeholder="Email" minlength="10" required>
+                        <p class="p2"></p>
+                    </div>
+                </div>
+                <div class="go2">
+                    <div class="box">
+                        <input class="i3" type="tel" name="phone" placeholder="Telefone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required title="xx xxxxx-xxxx">
+                        <p class="p3"></p>
+                    </div>
+                    <div class="box">
+                        <input class="i4" type="text" name="message" placeholder="site" minlength="2">
+                        <p class="p4"></p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <textarea class="i5" name="message" placeholder="Mensagem" minlength="2" required></textarea>
+                <p class="p5"></p>
+            </div>
+            <div class="box-d6">
+                <input class="i6" type="submit" value="Enviar mensagem">
+                <input class="i7" type="submit" value="Enviar mensagem">
+            </div>
+        </form>
+    </section>
+    <footer>
+        <h4 class="title-three">
+            Gabriel Castro
+        </h4>
+        <nav class="list-icon">
+            <a class="icon-item" href="https://www.instagram.com/gabrielcastro_dev/?next=%2F" target="_blank"><i class="fa-brands fa-instagram icon2"></i></a>
+            <a class="icon-item" href="https://www.linkedin.com/in/gabriel-castro-a8a66831b/" target="_blank"><i class="fa-brands fa-linkedin icon2"></i></a>
+            <a class="icon-item" href="https://github.com/gabrielcastro77" target="_blank"><i class="fa-brands fa-github icon2"></i></a>
+        </nav>
+    </footer>
+</body>
+<script src="https://kit.fontawesome.com/baad1a9375.js" crossorigin="anonymous"></script>
+<script src="../scripts/contacts.js"></script>
+</script>
+</html>

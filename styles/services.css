@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    border: 4px solid #CCCCCC;
+}
+
+section {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.box-x {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+}
+
+.box-animation {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.line1 {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #CCCCCC;
+}
+
+.line2 {
+    position: absolute;
+    top: 0;
+    left: 45%;
+    width: 4px;
+    height: 100%;
+    background-color: #CCCCCC;
+}
+
+.box-animation::before {
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: #BBBBBB;
+    transition: width 0.2s linear 0.2s;
+    transform: scaleX(0);
+}
+
+.box-animation:hover::before {
+    width: 100%;
+    transform: scaleX(1);
+}
+
+.box-animation::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 45%;
+    width: 4px;
+    height: 0;
+    background-color: #BBBBBB;
+    transition: height 0.2s linear 0.6s;
+    transform: scaleY(0);
+}
+
+.box-animation:hover::after {
+    height: 100%;
+    transform: scaleY(1);
+}
+
+.first-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    margin: 100px auto 138px;
+}
+
+.title {
+    padding: 0 20px;
+    text-align: center;
+    font: 32px "Open Sans", sans-serif;
+    letter-spacing: 6px;
+    line-height: 1.2;
+    color: #333333;
+}
+
+.text {
+    padding: 0 20px;
+    font: 16px "Open Sans", sans-serif;
+    text-align: center;
+    color: #8A8A8A;
+}
+
+.marking {
+    font-weight: bolder;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.item {
+    position: relative;
+    display: block;
+    width: 300px;
+    margin-bottom: 118px;
+    text-align: center;
+}
+
+.item:hover .box-icon {
+    top: -10%;
+}
+
+.box-icon {
+    position: absolute;
+    top: 0;
+    left: 35%;
+    display: flex;
+    width: 90px;
+    height: 90px;
+    transform: rotate(45deg);
+    background-color: #B7A389;
+    transition: top 1s;
+    color: #FFFFFF;
+}
+
+.icon1 {
+    display: block;
+    margin: auto auto;
+    transform: rotate(-45deg);
+    font-size: 30px;
+}
+
+.title-two {
+    padding-top: 130px;
+    margin-bottom: 10px;
+    font: bold 20px "Open Sans", sans-serif;
+    color: #333333;
+}
+
+.text-two {
+    width: 100%;
+    font: 14px "Open Sans", sans-serif;
+    color: #777777;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 30px 16px;
+    border-top: solid 1px #F0F0F0;
+}
+
+.title-three {
+    width: 122px;
+    height: 40px;
+    font: italic bold 18px "Playfair Display", serif;
+    letter-spacing: 6px;
+    line-height: 1.0;
+    color: #999999;
+}
+
+.list-icon {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.icon-item {
+    display: flex;
+    width: 26px;
+    height: 26px;
+    transform: rotate(45deg);
+    transition: color 0.4s, background-color 0.4s;
+    text-decoration: none;
+    color: #999999;
+    background-color: #F0F0F0;
+}
+
+.icon-item:hover {
+    background-color: #B7A389;
+    color: #ffffff;
+}
+
+.icon2 {
+    display: block;
+    margin: auto auto;
+    transform: rotate(-45deg);
+    font-size: 14px;
+}
+
+@media screen and (min-width: 1024px) {
+    .text {
+        width: 426px;
+    }
+
+    .list {
+        display: block;
+        width: 100%;
+    }
+
+    .go1 {
+        display: flex;
+    }
+
+    .go2 {
+        display: flex;
+    }
+
+    .text-two {
+        width: 174px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .box-x {
+        position: fixed;
+    }
+
+    .text {
+        width: 555px;
+    }
+}
