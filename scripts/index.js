@@ -35,22 +35,22 @@ link1.addEventListener('click', () => {
         animation.style = 'width: 190px'
         setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/aboutme.html")
-        setTimeout(rel, 3000)
+        setTimeout(rel, 2500)
     } if (width >= 375 && width <= 767) {
         animation.style = 'width: 230px'
         setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/aboutme.html")
-        setTimeout(rel, 3000)
+        setTimeout(rel, 2500)
     } if (width >= 768 && width <= 1023) {
         animation.style = 'width: 470px'
         setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/aboutme.html")
-        setTimeout(rel, 3000)
+        setTimeout(rel, 2500)
     } if (width >= 1024) {
         animation.style = 'width: 500px'
         setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/aboutme.html")
-        setTimeout(rel, 3000)
+        setTimeout(rel, 2500)
     }
 })
 
@@ -60,22 +60,22 @@ link2.addEventListener('click', () => {
         animation.style = 'width: 190px'
         setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/services.html")
-        setTimeout(rel, 3000)
+        setTimeout(rel, 2500)
     } if (width >= 375 && width <= 767) {
         animation.style = 'width: 230px'
         setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/services.html")
-        setTimeout(rel, 3000)
+        setTimeout(rel, 2500)
     } if (width >= 768 && width <= 1023) {
         animation.style = 'width: 470px'
         setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/services.html")
-        setTimeout(rel, 3000)
+        setTimeout(rel, 2500)
     } if (width >= 1024) {
         animation.style = 'width: 500px'
         setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/services.html")
-        setTimeout(rel, 3000)
+        setTimeout(rel, 2500)
     }
 })
 
@@ -85,22 +85,22 @@ link3.addEventListener('click', () => {
         animation.style = 'width: 190px'
         setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/portfolio.html")
-        setTimeout(rel, 3000)
+        setTimeout(rel, 2500)
     } if (width >= 375 && width <= 767) {
         animation.style = 'width: 230px'
         setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/portfolio.html")
-        setTimeout(rel, 3000)
+        setTimeout(rel, 2500)
     } if (width >= 768 && width <= 1023) {
         animation.style = 'width: 470px'
         setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/portfolio.html")
-        setTimeout(rel, 3000)
+        setTimeout(rel, 2500)
     } if (width >= 1024) {
         animation.style = 'width: 500px'
         setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/portfolio.html")
-        setTimeout(rel, 3000)
+        setTimeout(rel, 2500)
     }
 })
 
@@ -110,21 +110,21 @@ link4.addEventListener('click', () => {
         animation.style = 'width: 190px'
         setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/contacts.html")
-        setTimeout(rel, 3000)
+        setTimeout(rel, 2500)
     } if (width >= 375 && width <= 767) {
         animation.style = 'width: 230px'
         setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/contacts.html")
-        setTimeout(rel, 3000)
+        setTimeout(rel, 2500)
     } if (width >= 768 && width <= 1023) {
         animation.style = 'width: 470px'
         setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/contacts.html")
-        setTimeout(rel, 3000)
+        setTimeout(rel, 2500)
     } if (width >= 1024) {
         animation.style = 'width: 500px'
         setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/contacts.html")
-        setTimeout(rel, 3000)
+        setTimeout(rel, 2500)
     }
 })
