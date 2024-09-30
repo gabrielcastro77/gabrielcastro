@@ -10,7 +10,7 @@ const link3 = document.querySelector('.link3')
 const link4 = document.querySelector('.link4')
 const na = document.querySelector('.name')
 
-function move() {
+function mov() {
     animation.style = 'display: none;'
     title.style = 'display: none;'
     menu.style = 'display: none;'
@@ -25,27 +25,32 @@ function anc(path) {
     ancora.click();
 }
 
+function rel() {
+    location.reload(); 
+}
+
 link1.addEventListener('click', () => {
     const width = window.innerWidth
     if (width <= 374) {
         animation.style = 'width: 190px'
-        setTimeout(move, 1000)
+        setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/aboutme.html")
+        setTimeout(rel, 3000)
     } if (width >= 375 && width <= 767) {
         animation.style = 'width: 230px'
-        setTimeout(move, 1000)
+        setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/aboutme.html")
+        setTimeout(rel, 3000)
     } if (width >= 768 && width <= 1023) {
         animation.style = 'width: 470px'
-        setTimeout(move, 1000)
+        setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/aboutme.html")
+        setTimeout(rel, 3000)
     } if (width >= 1024) {
         animation.style = 'width: 500px'
-        setTimeout(move, 1000)
+        setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/aboutme.html")
-        setTimeout(() => {
-            location.reload(); 
-        }, 3000)
+        setTimeout(rel, 3000)
     }
 })
 
@@ -53,23 +58,24 @@ link2.addEventListener('click', () => {
     const width = window.innerWidth
     if (width <= 374) {
         animation.style = 'width: 190px'
-        setTimeout(move, 1000)
+        setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/services.html")
+        setTimeout(rel, 3000)
     } if (width >= 375 && width <= 767) {
         animation.style = 'width: 230px'
-        setTimeout(move, 1000)
+        setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/services.html")
+        setTimeout(rel, 3000)
     } if (width >= 768 && width <= 1023) {
         animation.style = 'width: 470px'
-        setTimeout(move, 1000)
+        setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/services.html")
+        setTimeout(rel, 3000)
     } if (width >= 1024) {
         animation.style = 'width: 500px'
-        setTimeout(move, 1000)
+        setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/services.html")
-        setTimeout(() => {
-            location.reload(); 
-        }, 3000)
+        setTimeout(rel, 3000)
     }
 })
 
@@ -77,23 +83,24 @@ link3.addEventListener('click', () => {
     const width = window.innerWidth
     if (width <= 374) {
         animation.style = 'width: 190px'
-        setTimeout(move, 1000)
+        setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/portfolio.html")
+        setTimeout(rel, 3000)
     } if (width >= 375 && width <= 767) {
         animation.style = 'width: 230px'
-        setTimeout(move, 1000)
+        setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/portfolio.html")
+        setTimeout(rel, 3000)
     } if (width >= 768 && width <= 1023) {
         animation.style = 'width: 470px'
-        setTimeout(move, 1000)
+        setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/portfolio.html")
+        setTimeout(rel, 3000)
     } if (width >= 1024) {
         animation.style = 'width: 500px'
-        setTimeout(move, 1000)
+        setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/portfolio.html")
-        setTimeout(() => {
-            location.reload(); 
-        }, 3000)
+        setTimeout(rel, 3000)
     }
 })
 
@@ -101,22 +108,23 @@ link4.addEventListener('click', () => {
     const width = window.innerWidth
     if (width <= 374) {
         animation.style = 'width: 190px'
-        setTimeout(move, 1000)
+        setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/contacts.html")
+        setTimeout(rel, 3000)
     } if (width >= 375 && width <= 767) {
         animation.style = 'width: 230px'
-        setTimeout(move, 1000)
+        setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/contacts.html")
+        setTimeout(rel, 3000)
     } if (width >= 768 && width <= 1023) {
         animation.style = 'width: 470px'
-        setTimeout(move, 1000)
+        setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/contacts.html")
+        setTimeout(rel, 3000)
     } if (width >= 1024) {
         animation.style = 'width: 500px'
-        setTimeout(move, 1000)
+        setTimeout(mov, 1000)
         setTimeout(anc, 2000, "pages/contacts.html")
-        setTimeout(() => {
-            location.reload(); 
-        }, 3000)
+        setTimeout(rel, 3000)
     }
 })
