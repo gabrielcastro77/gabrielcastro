@@ -43,6 +43,9 @@ link1.addEventListener('click', () => {
         animation.style = 'width: 500px'
         setTimeout(move, 1000)
         setTimeout(anc, 2000, "pages/aboutme.html")
+        setTimeout(() => {
+            location.reload(); 
+        }, 3000)
     }
 })
 
@@ -64,6 +67,9 @@ link2.addEventListener('click', () => {
         animation.style = 'width: 500px'
         setTimeout(move, 1000)
         setTimeout(anc, 2000, "pages/services.html")
+        setTimeout(() => {
+            location.reload(); 
+        }, 3000)
     }
 })
 
@@ -85,6 +91,9 @@ link3.addEventListener('click', () => {
         animation.style = 'width: 500px'
         setTimeout(move, 1000)
         setTimeout(anc, 2000, "pages/portfolio.html")
+        setTimeout(() => {
+            location.reload(); 
+        }, 3000)
     }
 })
 
@@ -106,5 +115,8 @@ link4.addEventListener('click', () => {
         animation.style = 'width: 500px'
         setTimeout(move, 1000)
         setTimeout(anc, 2000, "pages/contacts.html")
+        setTimeout(() => {
+            location.reload(); 
+        }, 3000)
     }
 })
